@@ -15,7 +15,7 @@ body{
 /* container of to-do list */
 .container {
   width: 600px;
-  height: 400px;
+  height: 400px auto;
   background-color: #F9F7F7;
   border-radius: 10px;
   padding: 20px;
@@ -50,7 +50,7 @@ body{
 .task_input button{
     width: 45px;
     height: 34px;
-    background: AAAAAA;
+    background: #AAAAAA;
     border: 1px solid rgba(177, 177, 177, 0.4);
     border-left: none; 
     border-radius: 0 5px 5px 0; 
@@ -62,7 +62,28 @@ body{
 .task_input button:hover {
     background: #2a5a94; 
 }
+ #task_list li {
+    height: 55px;
+    width: 100%;
+    color: #3F72AF; 
+    background-color: #DBE2EF;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+} 
 
+#task_list li i {
+    color: red;
+}
 
-
-
+.complete{
+  text-decoration: line-through;
+  color: gray;
+  border: 1px solid gray;
+}
+ 
